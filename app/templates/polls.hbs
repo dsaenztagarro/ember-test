@@ -1,0 +1,10 @@
+Polls List
+
+<ul>
+  {{#each polls as |poll|}}
+    <li>
+      {{poll.name}}
+      <a {{action 'edit' poll}}>Edit</a>
+    </li>
+  {{/each}}
+</ul>
